@@ -1,5 +1,5 @@
 import './App.scss';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Product from './Pages/Product/Product';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';

@@ -43,7 +43,7 @@ const Carousel = ({images}) => {
   }
 
   return <>
-    <img src={'../images/'+ activeImage} alt="" className={appearAnimation ? 'animate__animated animate__fadeIn' : ''}/>
+    <img src={process.env.PUBLIC_URL + '/images/'+ activeImage} alt="" className={appearAnimation ? 'animate__animated animate__fadeIn' : ''}/>
     <div style={{textAlign: 'right'}} className={styles.controls}>
       <a role="button" className={styles.next} onClick={nextPrev}>NEXT</a>
       /

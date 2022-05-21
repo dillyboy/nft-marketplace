@@ -31,7 +31,7 @@ const Products = ({topic, navigate}) => {
                 <p className={styles.amount}>{nft.userBid.amount} {nft.userBid.coin}</p>
               </div>
             ): null}
-            <img src={'images/'+nft.image} alt="" style={highlightImage(nft)}/>
+            <img src={process.env.PUBLIC_URL + '/images/'+nft.image} alt="" style={highlightImage(nft)}/>
             <div className={styles.description}>
               <p className={styles.time}>2H 40M 30S</p>
               <p className={styles.name}>#{nft.no} {nft.title}</p>
