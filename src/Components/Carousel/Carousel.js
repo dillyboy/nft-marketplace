@@ -9,6 +9,10 @@ const Carousel = ({images}) => {
   useEffect(() => {
     setActiveImage(images[0]);
 
+    images.forEach((picture) => {
+       new Image().src = process.env.PUBLIC_URL + '/images/'+ picture; // preload images for faster performance
+    });
+
     const timer = setTimeout(() => {
       setAppearAnimation(false);
     }, 500);
@@ -43,7 +47,7 @@ const Carousel = ({images}) => {
   }
 
   return <>
-    <img src={process.env.PUBLIC_URL + '/images/'+ activeImage} alt="" className={appearAnimation ? 'animate__animated animate__fadeIn' : ''}/>
+    {activeImage ? <img src={process.env.PUBLIC_URL + '/images/'+ activeImage} alt="" className={appearAnimation ? 'animate__animated animate__fadeIn' : ''}/> : null}
     <div style={{textAlign: 'right'}} className={styles.controls}>
       <a role="button" className={styles.next} onClick={nextPrev}>NEXT</a>
       /

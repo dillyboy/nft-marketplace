@@ -9,13 +9,12 @@ import { getAll } from './features/nft/nftSlice';
 import { useDispatch } from 'react-redux';
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
+const url = 'https://dillyboy.github.io/nft-marketplace';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log('https://dillyboy.github.io/nft-marketplace/sample-api.json');
-    axios.get('https://dillyboy.github.io/nft-marketplace/sample-api.json')
-    // axios.get('/sample-api.json')
+    axios.get(`${url}/sample-api.json`)
       .then(res => {
         dispatch(getAll(res.data));
       }).catch(err => {
