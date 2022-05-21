@@ -13,7 +13,9 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    axios.get('/sample-api.json')
+    console.log('https://dillyboy.github.io/nft-marketplace/sample-api.json');
+    axios.get('https://dillyboy.github.io/nft-marketplace/sample-api.json')
+    // axios.get('/sample-api.json')
       .then(res => {
         dispatch(getAll(res.data));
       }).catch(err => {
