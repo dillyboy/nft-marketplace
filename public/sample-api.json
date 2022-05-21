@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1857,
+    "title": "TOXI-COLOR",
+    "image": "image-1.png",
+    "no": "234",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet risus, id scelerisque sem. Suspendisse nec tincidunt dui, in dapibus arcu. Aenean nibh orci, maximus sit amet placerat in, pulvinar nec est. Donec eros erat, gravida nec accumsan nec, porttitor vel nunc. Suspendisse ac malesuada magna. Nunc nulla elit, rhoncus nec congue vitae, egestas eget neque. Donec ut posuere augue. Nullam efficitur risus quis libero tincidunt, quis pulvinar felis laoreet. Sed vel mattis felis, et finibus mauris. Mauris quis lectus vitae libero aliquet tincidunt.",
+    "carouselImages": [
+      "carousel-1.jpg",
+      "carousel-2.jpg",
+      "carousel-3.jpg"
+    ],
+    "bidPrice": {
+      "amount": 15,
+      "coin": "ETH"
+    }
+  },
+  {
+    "id": 2985,
+    "title": "DISCOVER",
+    "image": "image-2.png",
+    "no": "542",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet risus, id scelerisque sem. Suspendisse nec tincidunt dui, in dapibus arcu. Aenean nibh orci, maximus sit amet placerat in, pulvinar nec est. Donec eros erat, gravida nec accumsan nec, porttitor vel nunc. Suspendisse ac malesuada magna. Nunc nulla elit, rhoncus nec congue vitae, egestas eget neque. Donec ut posuere augue. Nullam efficitur risus quis libero tincidunt, quis pulvinar felis laoreet. Sed vel mattis felis, et finibus mauris. Mauris quis lectus vitae libero aliquet tincidunt.",
+    "carouselImages": [
+      "carousel-1.jpg",
+      "carousel-2.jpg",
+      "carousel-3.jpg"
+    ],
+    "bidPrice": {
+      "amount": 300,
+      "coin": "USDT"
+    }
+  },
+  {
+    "id": 3954,
+    "title": "ICARUS",
+    "image": "image-3.png",
+    "no": "647",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis aliquet risus, id scelerisque sem. Suspendisse nec tincidunt dui, in dapibus arcu. Aenean nibh orci, maximus sit amet placerat in, pulvinar nec est. Donec eros erat, gravida nec accumsan nec, porttitor vel nunc. Suspendisse ac malesuada magna. Nunc nulla elit, rhoncus nec congue vitae, egestas eget neque. Donec ut posuere augue. Nullam efficitur risus quis libero tincidunt, quis pulvinar felis laoreet. Sed vel mattis felis, et finibus mauris. Mauris quis lectus vitae libero aliquet tincidunt.",
+    "carouselImages": [
+      "carousel-1.jpg",
+      "carousel-2.jpg",
+      "carousel-3.jpg"
+    ],
+    "bidPrice": {
+      "amount": 1,
+      "coin": "BTC"
+    }
+  }
+]

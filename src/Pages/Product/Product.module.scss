@@ -1,0 +1,88 @@
+@import "src/scss/variables";
+
+.productContainer {
+  display: flex;
+  margin: 89px 39px;
+  .carousel {
+    width: 65%;
+  }
+
+  .details {
+    width: 35%;
+    padding: 74px 0px 74px 38px;
+
+    .title {
+      margin: 0;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: $white-text;
+      animation-delay: 300ms;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: $grey-text;
+      margin-top: 10px;
+      animation-delay: 300ms;
+
+      .time {
+        color: $white-text;
+      }
+    }
+
+    .detailsLabel {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: $grey-text;
+      margin: 100px 0 17px 0;
+      animation-delay: 500ms;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      color: $white-text;
+      text-align: justify;
+      animation-delay: 500ms;
+    }
+
+    .price {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      animation-delay: 700ms;
+    }
+
+    .inputBid {
+      margin-top: 25px;
+    }
+  }
+
+}
+
+@media screen and (max-width: $md) {
+  .productContainer {
+    flex-direction: column;
+    .carousel {
+      width: 100%;
+    }
+
+    .details {
+      width: 100%;
+      padding: 74px 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@import "src/scss/variables";
+
+img {
+  width: 100%;
+}
+
+.controls {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $grey-text;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+
+  .next {
+    margin-right: 10px;
+  }
+
+  .prev {
+    margin-left: 10px;
+  }
+
+  a:hover {
+    color: $white-text;
+    transition: all 0.3s ease-in-out;
+  }
+}
