@@ -1,25 +1,16 @@
-import './App.scss';
+import { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import Product from './Pages/Product/Product';
 import ErrorPage from './Pages/ErrorPage/ErrorPage';
-import { useEffect } from 'react';
-import axios from 'axios';
-import { getAll } from './features/nft/nftSlice';
-import { useDispatch } from 'react-redux';
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
-
-const url = 'https://dillyboy.github.io/nft-marketplace';
+import { useDispatch } from 'react-redux';
+import { fetchNts } from './features/nft/nftSlice';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    axios.get(`${url}/sample-api.json`)
-      .then(res => {
-        dispatch(getAll(res.data));
-      }).catch(err => {
-      console.error(err);
-    })
+    dispatch(fetchNts())
   }, [dispatch])
 
   return (
